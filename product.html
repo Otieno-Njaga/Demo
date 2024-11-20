@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="components.css">
+    <script src="main.js" defer></script>
+    <script src="state.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="checkout.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="/images/logo.png" alt="logo"  ></div>
+        <button id="menu-toggle">&#9776; Menu</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>
+        <div class="cart-icon">
+            <a href="cart.html"><img src="/images/shopping-cart.png" alt="https://www.flaticon.com/free-icons/smart-cart" ></a>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+    <main>
+        <div class="product-page">
+            <!-- Example of one product item with data attributes -->
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Add more products as needed -->
+             
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="/images/promotional-image.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title" data-title="Product Title">Product Title</h1>
+                    <p class="product-description">This is a brief description of the product, highlighting its main features and benefits.</p>
+                    <p class="product-price" data-price="99.99">$99.99</p>
+                    <button class="add-to-cart" data-title="Product Title" data-price="99.99" onclick="addToCart(event)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <section class="quick-links">
+            <p>Quick Links</p>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </section>
+        <section class="payment-method">
+            <p>Payment Methods</p>
+            <a href="">Stripe</a>
+            <a href="">Paypal</a>
+            <a href="">M-PESA</a>
+        </section>
+
+        <section class="social-media">
+            <p>Join Us On</p>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">LinkedIn</a>
+        </section>
+
+        <section class="copy-right">
+            <p>E-SHOP &copy; 2024 e-shop. All Rights Reserved.</p>
+        </section>
+    </footer>
+    
+        
+    </body>
+    </html>

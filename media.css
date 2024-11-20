@@ -1,0 +1,136 @@
+/*  Header Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .cart-icon img {
+        width: 25px;
+    }
+}
+
+
+
+/* Hero Responsive Styling */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Footer Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 8px;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Make the toggle button visible on smaller screens */
+    #menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px; /* Position the button at the top right */
+        z-index: 1000; /* Ensure it stays above other elements */
+        background: #ffbf00; /* Button background color */
+        color: #fff; /* Button text color */
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Initially hide nav on smaller screens */
+    nav {
+        display: none;
+    }
+
+    /* Show nav when the 'show' class is applied */
+    nav.show {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 28vh;
+        background-color: #333;
+        padding-top: 50px; /* Leave space for the toggle button */
+        z-index: 900; /* Ensure the nav stays below the button */
+    }
+
+    nav a {
+        color: #ffbf00;
+        padding: 10px;
+    }
+}
+
+
+
+/* Responsive Layout for Smaller Screens product pages */
+@media (max-width: 768px) {
+    .product-page {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Responsive Adjustments Cart Page */
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cart-total {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="components.css">
+    <script src="main.js" defer></script>
+    <script src="state.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="checkout.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="/images/logo.png" alt="logo"  ></div>
+        <button id="menu-toggle">&#9776; Menu</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>
+        <div class="cart-icon">
+            <a href="cart.html"><img src="/images/shopping-cart.png" alt="https://www.flaticon.com/free-icons/smart-cart" ></a>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+    <main>
+        <div class="cart-page">
+            <h1>Shopping Cart</h1>
+            <div id="cart-items"></div> <!-- Container for dynamically added cart items -->
+    
+            <div class="cart-total">
+                <p>Total: <span class="total-price">$0.00</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <section class="quick-links">
+            <p>Quick Links</p>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </section>
+        <section class="payment-method">
+            <p>Payment Methods</p>
+            <a href="">Stripe</a>
+            <a href="">Paypal</a>
+            <a href="">M-PESA</a>
+        </section>
+
+        <section class="social-media">
+            <p>Join Us On</p>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">LinkedIn</a>
+        </section>
+
+        <section class="copy-right">
+            <p>E-SHOP &copy; 2024 e-shop. All Rights Reserved.</p>
+        </section>
+    </footer>
+    
+        
+    </body>
+    </html>
